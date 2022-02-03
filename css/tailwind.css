@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+                                                                                                                                                            @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Just+Another+Hand&family=Roboto+Condensed:wght@700&display=swap');
+
+                                                                                                                                                            .task-list-item:before {
+                                                                                                                                                              @apply hidden;
+                                                                                                                                                            }
+
+
+
+
+  @font-face {
+    font-family: "AD";
+    font-weight: 700;
+    src: url('../public/fonts/@font-face/4fe422382fca89dfc46c6357500af304.woff') format("woff");
+    src: url('../public/fonts/@font-face/4fe422382fca89dfc46c6357500af304.woff2'), format("woff2");
+    font-display: swap;
+    font-style: normal;    
+  
+}
+
+
+@layer components {
+
+  .headingA {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff ;
+    font-family: "Architects Daughter";
+  }
+  .headingB {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffcc00 ;
+    font-family: "Architects Daughter";
+  }
+  .headingc {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+    font-family: "Architects Daughter";
+  }
+  
+  
+  .headingD {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #595959;
+    font-family: "Architects Daughter";
+    font-weight: extrabold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  background-color: red;
+  font-family: AD;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+text:-webkit--text-stroke-color,
+text:-webkit-text-stroke-width,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
